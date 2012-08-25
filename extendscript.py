@@ -1,4 +1,9 @@
 # -- coding: utf-8 --
+# IMPORTANT: Keep The Line above intact
+# It takes care of encoding for the output of the script
+# Yeah i know its wired. But that seems to be the Python way
+#
+# LICENSE:
 # Copyright (c)  2012
 # Fabian "fabiantheblind" Morón Zirfas
 # Permission is hereby granted, free of charge, to any
@@ -18,20 +23,25 @@
 # DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF  CONTRACT,
 # TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTIO
 # WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
+#
 # see also http://www.opensource.org/licenses/mit-license.php
-
-import sublime
-import sublime_plugin
-import subprocess
-import re
+#
+# HOW TO:
 # run it via view.run_command('extend_script') in the console
-# TO DO Options
+#
+# TO DO:
+#   Options
 #   * Key Binding
 #   * Autosafe (if is dirty or something like this)
 #   * Application Chooser
 #   * Version Chooser
 #   * Ond some other Fancy stuff
+
+
+import sublime
+import sublime_plugin
+import subprocess
+import re
 
 
 class ExtendScriptCommand(sublime_plugin.TextCommand):
